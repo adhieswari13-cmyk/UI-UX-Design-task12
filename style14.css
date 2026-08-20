@@ -1,0 +1,443 @@
+/* ================= GENERAL ================= */
+
+body {
+    background: #f5f7fb;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: #172554;
+    color: white;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+
+    margin-bottom: 35px;
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.sidebar .nav-link {
+    color: #cbd5e1;
+
+    padding: 12px 15px;
+
+    margin-bottom: 8px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    background: #2563eb;
+    color: white;
+}
+
+.sidebar-bottom {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+
+/* ================= MAIN ================= */
+
+.main-content {
+    margin-left: 250px;
+    min-height: 100vh;
+}
+
+
+/* ================= TOP NAVBAR ================= */
+
+.top-navbar {
+    height: 75px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+.profile-btn {
+    border: none;
+}
+
+
+/* ================= DASHBOARD ================= */
+
+.dashboard-content {
+    padding: 30px;
+}
+
+
+/* ================= BALANCE CARDS ================= */
+
+.balance-card {
+    border: none;
+    border-radius: 14px;
+
+    min-height: 170px;
+}
+
+.primary-card {
+    background: #2563eb;
+    color: white;
+}
+
+.balance-icon {
+    font-size: 40px;
+}
+
+.balance-symbol {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+.income {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.expense {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+
+/* ================= BANK CARD ================= */
+
+.bank-card {
+    min-height: 230px;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #1e3a8a,
+        #2563eb
+    );
+
+    color: white;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.bank-card .bi-wifi {
+    font-size: 28px;
+    transform: rotate(90deg);
+}
+
+.master-symbol {
+    font-size: 25px;
+    letter-spacing: -8px;
+}
+
+
+/* ================= QUICK ACTIONS ================= */
+
+.quick-action {
+    border: 1px solid #e5e7eb;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+.quick-action i {
+    font-size: 25px;
+    color: #2563eb;
+}
+
+.quick-action:hover {
+    background: #eff6ff;
+
+    border-color: #2563eb;
+}
+
+
+/* ================= ANALYTICS CHART ================= */
+
+.chart-select {
+    width: 100px;
+}
+
+.chart-area {
+    height: 270px;
+
+    display: flex;
+    align-items: end;
+
+    padding: 20px;
+}
+
+.chart-bars {
+    width: 100%;
+    height: 230px;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.chart-column {
+    height: 100%;
+
+    display: flex;
+    align-items: end;
+
+    gap: 5px;
+
+    position: relative;
+}
+
+.income-bar,
+.expense-bar {
+    width: 18px;
+
+    border-radius: 5px 5px 0 0;
+}
+
+.income-bar {
+    background: #2563eb;
+}
+
+.expense-bar {
+    background: #f97316;
+}
+
+.chart-column small {
+    position: absolute;
+
+    bottom: -25px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    color: #6b7280;
+}
+
+.chart-legend {
+    display: flex;
+
+    gap: 25px;
+
+    justify-content: center;
+
+    margin-top: 15px;
+}
+
+.chart-legend i {
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    margin-right: 5px;
+}
+
+.legend-income {
+    background: #2563eb;
+}
+
+.legend-expense {
+    background: #f97316;
+}
+
+
+/* ================= SAVINGS ================= */
+
+.savings-circle {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #2563eb 0deg 245deg,
+            #e5e7eb 245deg 360deg
+        );
+
+    margin: 25px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.savings-circle div {
+    width: 110px;
+    height: 110px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.progress {
+    height: 8px;
+}
+
+
+/* ================= TRANSACTIONS ================= */
+
+.transaction-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.transaction-icon {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income-icon {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.transaction-name small {
+    display: block;
+
+    color: #6b7280;
+
+    margin-top: 3px;
+}
+
+
+/* ================= TABLE ================= */
+
+.table th {
+    color: #6b7280;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.table td {
+    font-size: 14px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    font-size: 14px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .dashboard-content {
+        padding: 20px 15px;
+    }
+
+    .top-navbar {
+        height: auto;
+        padding: 15px;
+    }
+
+    .bank-card {
+        min-height: 210px;
+    }
+
+}@charset "utf-8";
+/* CSS Document */
+
